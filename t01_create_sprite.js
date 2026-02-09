@@ -6,10 +6,20 @@
 	
 /*******************************************************/
 // setup()
+/*red
+#ff0000
+rgb(255,0,0) ?????
+*/
 /*******************************************************/
 function setup() {
-	console.log("setup: ");
+	console.log("setup:");
+	cnv = new Canvas(windowWidth,windowHeight);
+	rectangleOne = new Sprite(10,20,20,30);
+	rectangleOne.color = '#ff0000';
 
+	circleOne = new Sprite(60, 30, 40);
+	circleOne.color = '#ff0000';
+	background('#D3D3D3'); 
 }
 	
 /*******************************************************/
