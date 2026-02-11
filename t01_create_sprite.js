@@ -14,19 +14,19 @@ rgb(255,0,0) ?????
 function setup() {
 	console.log("setup:");
 	cnv = new Canvas(windowWidth,windowHeight);
-	rectangleOne = new Sprite(10,20,20,30);
-	rectangleOne.color = '#ff0000';
+	rectangleOne = new Sprite(200,500,200,100);
+	rectangleOne.color = '#808000';
 
-	circleOne = new Sprite(60, 30, 40);
-	circleOne.color = '#ff0000';
-	background('#D3D3D3'); 
+	circleOne = new Sprite(200,400,70);
+	circleOne.color = '#008080';
+	
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background('#D3D3D3');
 }
 
 /*******************************************************/
