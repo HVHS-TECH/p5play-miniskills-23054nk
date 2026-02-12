@@ -10,11 +10,19 @@
 function setup() {
 	console.log("setup: ");
 
-	wallLH  = new Sprite(0, height/2, 8, height, 'k');
+	cnv = new Canvas(windowWidth,windowHeight);
+// Left wall
+	wallLH  = new Sprite(4, height/2, 8, height, 'k');
 	wallLH.color = 'black';
-	wallRH  = new Sprite(x, y, w, h, 'k');
-	wallTop = new Sprite(x, y, w, h, 'k');
-	wallBot = new Sprite(x, y, w, h, 'k');
+// Right wall
+	wallRH  = new Sprite(width, height/2, 8, height, 'k');
+	wallRH.color = 'green';
+// Top wall
+	wallTop = new Sprite(width/2, 0, width, 8, 'k');
+	wallTop.color = 'blue';
+// Bottom wall
+	wallBot = new Sprite(width/2, height, width, 8, 'k');
+	wallBot.color = 'maroon';
 
 	ball_1 = new Sprite(width/2, height/2, 50, 'd');
 	ball_1.color = 'cyan';
@@ -23,7 +31,7 @@ function setup() {
 	ball_1.friction = 0;
 	ball_1.drag = 0;
 }
-	
+
 /*******************************************************/
 // draw()
 /*******************************************************/
