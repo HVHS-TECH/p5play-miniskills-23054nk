@@ -9,7 +9,8 @@
 /*******************************************************/
 function setup() {
 	console.log("setup:");
-
+	
+//p5 geometry 3rd task
 // Now the width and height of the canvas keep changing
 width = random(300,600);
 height = random(300,600);
