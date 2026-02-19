@@ -17,7 +17,7 @@ function setup() {
 
 	if (kb.pressing('left')) {
 // Set sprite's velocity to the left
-
+		vel.x = 10;
 }
 
 else if (kb.pressing ('right')) {
@@ -28,7 +28,7 @@ else if (kb.pressing ('right')) {
 
 if (kb.released('left')) {
 
-   	alien.vel.y = 4;
+   	vel.y = 0;
 
 }
 }

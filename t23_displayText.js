@@ -1,32 +1,25 @@
 /*******************************************************/
-// P5.play: t01_create_sprite
-// Create a sprite
-/// Written by ???
+// P5.play: t23_displayText
+// Extension tasks
+// Written by Nityaa
 /*******************************************************/
 	
 /*******************************************************/
 // setup()
-/*red
-#ff0000
-rgb(255,0,0) ?????
-*/
 /*******************************************************/
 function setup() {
-	console.log("setup:");
+	console.log("setup: ");
 	cnv = new Canvas(windowWidth,windowHeight);
-	rectangleOne = new Sprite(200,500,200,100);
-	rectangleOne.color = '#808000';
-
-	circleOne = new Sprite(200,400,70);
-	circleOne.color = '#008080';
-	
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	background('#D3D3D3');
+	background('#d4cbcb');
+	text("Hello World", 500, 500);
+	var name = "Nityaa";
+	text("Hello "+name, 500, 560);
 }
 
 /*******************************************************/
